@@ -1,60 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Grid Practice</title>
-  </head>
-  <body style="padding-bottom: 1000px;">
-    <div style="
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Example</title>
+  <style>
+    .grid-container {
       display: grid;
-      grid-template-columns: 100px 100px;
-    ">
-      <div style="background-color: lightblue;">div 1</div>
-      <div style="background-color: lightpink;">div 2<p>text</p></div>
-    </div>
-
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 100px 100px 200px;
-    ">
-      <div style="background-color: lightblue;">100px</div>
-      <div style="background-color: lightpink;">100px<p>text</p></div>
-      <div style="background-color: lightblue;">200px</div>
-      <div style="background-color: lightpink;">100px</div>
-    </div>
-
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 100px 1fr;
-    ">
-      <div style="background-color: lightblue;">100px</div>
-      <div style="background-color: lightpink;">1fr</div>
-    </div>
-
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 100px 1fr 2fr;
-    ">
-      <div style="background-color: lightblue;">100px</div>
-      <div style="background-color: lightpink;">1fr</div>
-      <div style="background-color: lightblue;">2fr</div>
-    </div>
-
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 20px;
-      row-gap: 40px;
-    ">
-      <div style="background-color: lightblue; height: 200px;">1fr</div>
-      <div style="background-color: lightpink; height: 200px;">1fr</div>
-      <div style="background-color: lightblue; height: 200px;">1fr</div>
-      <div style="background-color: lightpink; height: 200px;">1fr</div>
-      <div style="background-color: lightblue; height: 200px;">1fr</div>
-      <div style="background-color: lightpink; height: 200px;">1fr</div>
-    </div>
-  </body>
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background-color: #eee;
+      padding: 10px;
+    }
+    .grid-item {
+      background-color: #2196F3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grid Layout</h1>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+</body>
 </html>
